@@ -32,4 +32,7 @@ locust -f src/locustfile.py --host=http://localhost:8080 --master
 locust -f src/locustfile.py --host=http://localhost:8080 --worker
 # slave start: when master server is on remote server
 locust -f src/locustfile.py --host=http://localhost:8080 --master-host=master.example.com --slave
+
+sh ./multi-worker.sh
 ```
+
